@@ -1,0 +1,113 @@
+.assets-segment {
+    min-height: 40px;
+
+    ion-segment-button {
+        --border-radius: 0;
+        border: 0px;
+        color: #9f9fab;
+        font-weight: 600;
+    }
+
+    .segment-button-checked {
+        background: #FFF;
+        color: #120f20;
+        --border-color: opacity;
+        --color-checked: transparent;
+    }
+}
+
+ion-segment {
+    box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.20);
+    z-index: 1;
+}
+
+.tabs-header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: white;
+}
+
+.body-list {
+    display: flex;
+    padding-top: 40px;
+}
+
+
+.container {
+    width: 100%;
+}
+
+.list {
+    width: 100%;
+    max-width: 100%;
+    min-height: 60px;
+    display: block;
+    // background: white;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.box {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.87);
+    cursor: move;
+    display: flex;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.box:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+        0 8px 10px 1px rgba(0, 0, 0, 0.14),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.box:last-child {
+    border: none;
+}
+
+.box.cdk-drag-disabled {
+    background: #ccc;
+    cursor: default;
+}
+
+.cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+        0 8px 10px 1px rgba(0, 0, 0, 0.14),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+
+.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.list.cdk-drop-list-dragging .box:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+
+@media only screen and (min-device-width : 1300px) {
+    .container {
+        padding: 0;
+    }
+    .body-list {       
+        padding-top: 0;
+    }
+    ion-toolbar {
+        --background: rgba(18, 15, 32, 0.76);
+    }
+}

@@ -1,0 +1,22 @@
+ion-buttons {
+  background-color: #120f20;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 15px;
+
+  ion-button {
+    outline: none;
+
+    ion-label {
+      font-size: 14px;
+      color: #7f7e89;
+    }
+  }
+
+  .active {
+    border-bottom: 1px solid #4cdeb3;
+    ion-label {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-text slot="start">logo</ion-text>
+        <ion-title>ASSETS</ion-title>
+        <ion-text slot="end">settings</ion-text>
+    </ion-toolbar>
+    <ion-buttons slot="primary">
+        <ion-button routerLink="/tabs/assets/my" routerLinkActive="active">
+           <ion-label>My Assets</ion-label>
+        </ion-button>
+        <ion-button routerLink="/tabs/assets/opportunities" routerLinkActive="active">
+            <ion-label>Opportunity</ion-label>
+        </ion-button>
+    </ion-buttons>
+</ion-header>
+
+<ion-content>
+    <router-outlet></router-outlet>
+</ion-content>
