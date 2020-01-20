@@ -14,8 +14,10 @@
 
 
 ## Development server
-Run `npm install` for install dependencies.
-Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. 
+* Run `npm install` for install dependencies. 
+* Cordova platforms, preparing them for native builds `ionic cordova prepare`. 
+* Run `ionic serve` for a dev server. Navigate to `http://localhost:8100/`. 
+* Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. 
 
 
 ## Build
