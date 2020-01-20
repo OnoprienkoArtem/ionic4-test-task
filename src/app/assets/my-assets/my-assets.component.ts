@@ -75,7 +75,6 @@ export class MyAssetsComponent implements OnInit, OnDestroy {
     }
 
     removeItem(id: string, slidingItem: IonItemSliding, dataName) {
-        console.log(dataName);
         slidingItem.close();
         this.loadingController
             .create({
